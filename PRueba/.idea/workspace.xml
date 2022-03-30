@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfe62e10-868f-4a8f-bd9f-34044b674cd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Actividad3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/Actividad3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/src/Collectors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/src/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/src/co/edu/unac/poo2/cl03/AccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/src/co/edu/unac/poo2/cl03/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/src/co/edu/unac/poo2/cl03/Contacto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Actividad3/src/co/edu/unac/poo2/cl03/Cuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/Excepciones.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/Funciones Lambda/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/Funciones Lambda/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/Funciones Lambda/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/Funciones Lambda/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/Funciones Lambda/Funciones Lambda.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/Funciones Lambda/src/Funciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/src/AccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/src/CLiente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/src/Cuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clase30322/src/Excepciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actividad2/.idea/runConfigurations.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="269lBgqM3cT9fdzIOEJreMwzKOB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Taller1" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfe62e10-868f-4a8f-bd9f-34044b674cd1" name="Changes" comment="" />
+      <created>1646843551007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646843551007</updated>
+    </task>
+    <servers />
+  </component>
+</project>

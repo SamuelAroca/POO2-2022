@@ -46,7 +46,7 @@ public class Taller2 extends JFrame{
         textFieldHoraIngre.addFocusListener(new FocusAdapter() {
             @Override
             public void focusLost(FocusEvent e) {
-                if (!validarHora(textFieldHoraIngre.getText())) {
+                if (validarHora(textFieldHoraIngre.getText())) {
                     JOptionPane.showMessageDialog(new JFrame(),"El formato no es valido");
                 }
             }
@@ -96,21 +96,54 @@ public class Taller2 extends JFrame{
                 assert firstHour != null;
                 assert secondHour != null;
                 if (firstHour.getTime() < secondHour.getTime()) {
-                    //3600000  es el valor en milisegundos de una hora..
                     int tempresta = (int) (secondHour.getTime() - firstHour.getTime());
                     tiempotranscurrido = Math.rint(((double) tempresta / 3600000) * 100) / 100;
                 }
                 double tarifa = Double.parseDouble(textTarifa.getText());
 
                 double total = tiempotranscurrido*tarifa;
-                JOptionPane.showMessageDialog(new JFrame(),total);
-                JOptionPane.showMessageDialog(new JFrame(),comboBoxTipo.getSelectedItem());
+
+                if (!textFieldNombre.getText().isEmpty() && !textFieldMarca.getText().isEmpty()
+                        && !textFieldModelo.getText().isEmpty() && !textFieldPlaca.getText().isEmpty()
+                        && !textFieldFecha.getText().isEmpty() && !textFieldHoraIngre.getText().isEmpty()
+                        && !textSalida.getText().isEmpty() && !textTarifa.getText().isEmpty()) {
+                    JOptionPane.showMessageDialog(new JFrame(),"Señor/a " + textFieldNombre.getText() + "\nCon vehiculo tipo: " + comboBoxTipo.getSelectedItem()
+                            + "\nMarca: " + textFieldMarca.getText() + "\nModelo: " + textFieldModelo.getText() + "\nNumero de Placa: " + textFieldPlaca.getText()
+                            + "\nIngreso el dia " + textFieldFecha.getText() + " a la hora " + textFieldHoraIngre.getText() + "\ny salio a la hora: " + textSalida.getText()
+                            + "\nPor ende el valor total a pagar teniendo en cuenta la tarifa de " + textTarifa.getText() + " pesos es de: " + total + " COP");
+                } else {
+                    JOptionPane.showMessageDialog(new JFrame(),"Porfavor rellene todos los espacios");
+                }
             }
         });
         textSalida.addFocusListener(new FocusAdapter() {
             @Override
             public void focusLost(FocusEvent e) {
-                if (!validarHora(textSalida.getText())) {
+                if (validarHora(textSalida.getText())) {
+                    JOptionPane.showMessageDialog(new JFrame(),"El formato no es valido");
+                }
+            }
+        });
+        textFieldMarca.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (!validarCosas(textFieldMarca.getText())) {
+                    JOptionPane.showMessageDialog(new JFrame(),"El formato no es valido");
+                }
+            }
+        });
+        textFieldModelo.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (!validarCosas(textFieldModelo.getText())) {
+                    JOptionPane.showMessageDialog(new JFrame(),"El formato no es valido");
+                }
+            }
+        });
+        textTarifa.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (!validarTarifa(textTarifa.getText())) {
                     JOptionPane.showMessageDialog(new JFrame(),"El formato no es valido");
                 }
             }
@@ -142,6 +175,12 @@ public class Taller2 extends JFrame{
     public static boolean validarPlaca(String placa) {
         return placa.matches("^[A-Za-z]{3}[0-9]{3}$");
     }
+    public static boolean validarCosas(String marca) {
+        return marca.matches("^([A-Za-z]+[ ]?){1,2}$");
+    }
+    public static boolean validarTarifa(String tarifa) {
+        return tarifa.matches("^([1-9]{1}[0-9]+[ ]?){1,2}$");
+    }
 
     public static boolean validarHora(String hora) {
         Date myTime = null;
@@ -154,10 +193,6 @@ public class Taller2 extends JFrame{
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(new JFrame(), "Error: " + e.getMessage());
         }
-        if (myTime == null) {
-            return false;
-        } else {
-            return true;
-        }
+        return myTime == null;
     }
 }
