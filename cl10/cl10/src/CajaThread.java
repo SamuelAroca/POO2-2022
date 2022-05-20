@@ -45,7 +45,7 @@ public class CajaThread extends Thread{
 
     private void esperar (int segs) {
         try {
-            Thread.sleep(segs * 1000);
+            Thread.sleep(segs * 1000L);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
